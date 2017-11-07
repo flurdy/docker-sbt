@@ -10,7 +10,7 @@ WORKDIR /opt
 
 RUN wget --progress=dot:mega https://cocl.us/sbt-$SBT_VERSION.zip && \
   unzip sbt-$SBT_VERSION.zip && \
-  mv sbt-$SBT_VERSION /opt/sbt && \
+  mv sbt /opt/sbt && \
   ln -s /opt/sbt/bin/sbt /usr/local/bin/sbt && \
   rm sbt-$SBT_VERSION.zip
 
