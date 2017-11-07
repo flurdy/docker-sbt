@@ -11,5 +11,7 @@ WORKDIR /opt
 RUN wget --progress=dot:mega https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.zip && \
   unzip sbt-$SBT_VERSION.zip && \
   ln -s /opt/sbt/bin/sbt /usr/local/bin/sbt && \
-  rm sbt-$SBT_VERSION.zip
+  rm sbt-$SBT_VERSION.zip && \
+  sbt help >> /dev/null
+
 
