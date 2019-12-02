@@ -1,10 +1,10 @@
-from openjdk:8u131-jdk-alpine
+from openjdk:8u212-jdk-alpine
 
 MAINTAINER Ivar Abrahamsen <@flurdy>
 
 RUN apk update && apk add bash wget unzip
 
-ENV SBT_VERSION 1.0.2
+ENV SBT_VERSION 1.3.3
 ENV SBT_HOME /opt/sbt
 
 WORKDIR /opt
